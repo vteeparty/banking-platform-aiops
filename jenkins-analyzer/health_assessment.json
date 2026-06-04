@@ -1,0 +1,75 @@
+{
+  "timestamp": "2026-06-04T09:20:59.617225Z",
+  "health_status": "unhealthy",
+  "overall_health_score": 40,
+  "overall_risk_level": "critical",
+  "build_success_rate": 90.0,
+  "mean_time_to_recovery": null,
+  "services": [
+    {
+      "service_name": "payment-service",
+      "total_incidents": 4,
+      "critical_incidents": 3,
+      "high_incidents": 1,
+      "medium_incidents": 0,
+      "open_incidents": 3,
+      "incident_trend": "stable",
+      "health_score": 47,
+      "risk_level": "critical",
+      "recommendations": [
+        "Resolve 3 critical incidents in payment-service urgently",
+        "Address 1 high-severity issues in payment-service"
+      ]
+    },
+    {
+      "service_name": "Unknown",
+      "total_incidents": 4,
+      "critical_incidents": 1,
+      "high_incidents": 3,
+      "medium_incidents": 0,
+      "open_incidents": 4,
+      "incident_trend": "stable",
+      "health_score": 61,
+      "risk_level": "critical",
+      "recommendations": [
+        "Resolve 1 critical incidents in Unknown urgently",
+        "Address 3 high-severity issues in Unknown",
+        "Investigate pattern: 3 sonarqube_scan failures in Unknown"
+      ]
+    }
+  ],
+  "critical_areas": [
+    "Critical incidents in payment-service",
+    "Critical incidents in Unknown"
+  ],
+  "recommendations": [
+    "Address critical areas immediately: Critical incidents in payment-service",
+    "Investigate and resolve critical incidents in payment-service",
+    "Resolve 3 critical incidents in payment-service urgently",
+    "Address 1 high-severity issues in payment-service",
+    "Investigate and resolve critical incidents in Unknown",
+    "Resolve 1 critical incidents in Unknown urgently",
+    "Address 3 high-severity issues in Unknown",
+    "Triage and assign 7 open incidents for resolution"
+  ],
+  "incident_summary": {
+    "total_incidents": 8,
+    "by_severity": {
+      "critical": 4,
+      "high": 4
+    },
+    "by_failure_type": {
+      "maven_build": 2,
+      "sonarqube_scan": 4,
+      "trivy_security": 1,
+      "kubernetes_deploy": 1
+    },
+    "by_service": {
+      "payment-service": 4
+    },
+    "by_status": {
+      "in_progress": 1,
+      "open": 7
+    }
+  }
+}
